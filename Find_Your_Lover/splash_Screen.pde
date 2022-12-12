@@ -10,7 +10,8 @@ void splashScreen() {
   - any other instructions
   - splashscreen details
   */
-  background(255, 145, 0);//testing only
+  //background(255);//testing only, not nightmode friendly, ful blue
+  backgroundWhiteScreen();
   spaceBarText();
 }//End splashScreen
 //
