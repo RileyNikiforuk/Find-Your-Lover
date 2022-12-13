@@ -4,7 +4,7 @@ Boolean OS_on=false, splashScreenStart=false;
 color purple=#FF00FF, resetDefaultInk=#000000, white=#FFFFFF;
 //
 void setup() {
-  size(1200,900);
+  size(1200, 900);
   //
   appWidth = width;
   appHeight = height;
@@ -19,7 +19,10 @@ void setup() {
 void draw() {
   //assignment #2: OS level mouse click and splash screen
   if ( OS_on == true && splashScreenStart == false) splashScreen(); //OS level mouse click
-  if ( splashScreenStart ) homeScreen();
+  if ( splashScreenStart ) {
+    homeScreen();
+    gridDraw();
+  }
 }//End draw
 //
 void keyPressed() {
@@ -33,6 +36,7 @@ void keyPressed() {
 void mousePressed() {
   //OS level mouse click
   if ( OS_on==false ) OS_on=true;//End OS level mouse click
+  if ( splashScreenStart == true && mouseX > quitX && mouseX < quitX+quitWidth && mouseY > quitY && mouseY < quitY+quitHeight ) exit();
 }//End mousePressed
 //
 //End main program
