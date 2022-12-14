@@ -1,6 +1,6 @@
 //Global Variables
 int appWidth, appHeight, smallerDimension, largerDimension;
-Boolean OS_on=false, splashScreenStart=false;
+Boolean OS_on=false, splashScreenStart=false, nightMode=false;
 color purple=#FF00FF, resetDefaultInk=#000000, white=#FFFFFF;
 //
 void setup() {
@@ -31,6 +31,17 @@ void keyPressed() {
     backgroundWhiteScreen();
     backgroundImage();
   }//End splash Screen Space Bar
+  //
+  //keyboard short cuts
+  if (key=='N' || key=='n') { 
+    if (nightMode==true) { 
+      nightMode=false;
+      backgroundImage();
+    } else { 
+      nightMode=true;
+      backgroundImage();
+    }
+  }
 }//End keyPressed
 //
 void mousePressed() {

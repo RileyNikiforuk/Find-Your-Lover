@@ -2,9 +2,7 @@ float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
 int tintDayMode=255, tintDayModeOpacity=50;
 int tintRed= 64, tintGreen=64, tintBlue=40, tintNightModeOpacity=85;
 //
-void homeScreen() {
-  println("Arrived at Home Screen"); //testing for splash screen start button
-  /* Home screen expectations
+/* Home screen expectations
   - background image using tint()
   - 9 evenly spaced rectangles, assighnment #3
   - quit button and reset button (splash screen start button)
@@ -13,6 +11,8 @@ void homeScreen() {
   - see case study
   - note: must have one image with aspect ratio
   */
+void homeScreen() {
+  println("Arrived at Home Screen"); //testing for splash screen start button
   //
 }//End homeScreen
 //
@@ -26,8 +26,8 @@ void backgroundWhiteScreen() {
 //
 void backgroundImage() {
   backgroundWhiteScreen();
-  tint(tintDayMode, tintDayModeOpacity); //day mode, see ternary operator
-  tint(tintRed= 64, tintGreen=64, tintBlue=40, tintNightModeOpacity); //night mode, see ternary operator
+  if (nightMode==false) tint(tintDayMode, tintDayModeOpacity); //day mode, see ternary operator
+  if (nightMode==true) tint(tintRed= 64, tintGreen=64, tintBlue=40, tintNightModeOpacity); //night mode, see ternary operator
   image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
 }//End backgroundImage
 //
