@@ -1,14 +1,3 @@
-float lineX1, lineY1, lineWidth1, lineHeight1;
-float lineX2, lineY2, lineWidth2, lineHeight2;
-float lineX3, lineY3, lineWidth3, lineHeight3;
-float lineX4, lineY4, lineWidth4, lineHeight4;
-float startX2, startY2, startWidth2, startHeight2;
-float resetX, resetY, resetWidth, resetHeight;
-float quitX, quitY, quitWidth, quitHeight;
-color resetButtonColor, grey = #898989;
-color startButtonColor;
-color quitButtonColor;
-//
 void gridDraw() {
   strokeWeight(6);
   stroke(0);

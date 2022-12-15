@@ -32,6 +32,46 @@ void population() {
   quitY = appHeight * 10.5/20;
   quitWidth = appWidth * 5/20;
   quitHeight = appHeight * 1.8/20;
+  columX1 = appWidth * 0/3;
+  columY1 = appHeight * 0/3;
+  columWidth1 = appWidth * 1/3;
+  columHeight1 = appHeight * 1/3;
+  columX2 = appWidth * 1/3;
+  columY2 = appHeight * 0/3;
+  columWidth2 = appWidth * 1/3;
+  columHeight2 = appHeight * 1/3;
+  columX3 = appWidth * 2/3;
+  columY3 = appHeight * 0/3;
+  columWidth3 = appWidth * 1/3;
+  columHeight3 = appHeight * 1/3;
+  columX4 = appWidth * 0/3;
+  columY4 = appHeight * 1/3;
+  columWidth4 = appWidth * 1/3;
+  columHeight4 = appHeight * 1/3;
+  columX5 = appWidth * 1/3;
+  columY5 = appHeight * 1/3;
+  columWidth5 = appWidth * 1/3;
+  columHeight5 = appHeight * 1/3;
+  columX6 = appWidth * 2/3;
+  columY6 = appHeight * 1/3;
+  columWidth6 = appWidth * 1/3;
+  columHeight6 = appHeight * 1/3;
+  columX7 = appWidth * 0/3;
+  columY7 = appHeight * 2/3;
+  columWidth7 = appWidth * 1/3;
+  columHeight7 = appHeight * 1/3;
+  columX8 = appWidth * 1/3;
+  columY8 = appHeight * 2/3;
+  columWidth8 = appWidth * 1/3;
+  columHeight8 = appHeight * 1/3;
+  columX9 = appWidth * 2/3;
+  columY9 = appHeight * 2/3;
+  columWidth9 = appWidth * 1/3;
+  columHeight9 = appHeight * 1/3;
+  restartX = appWidth * 12.3/20;
+  restartY = appHeight * 6.7/20;
+  restartWidth = appWidth * 1/20;
+  restartHeight = appHeight * 1/20;
   //
 }//End population
 //
