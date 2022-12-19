@@ -1,6 +1,6 @@
 //Global Variables
 int appWidth, appHeight, smallerDimension, largerDimension;
-Boolean OS_on=false, splashScreenStart=false, nightMode=false, startNow=false, reset=false;
+Boolean OS_on=false, splashScreenStart=false, nightMode=false, startNow=false, reset=false, goodForYou=false;
 color purple=#FF00FF, resetDefaultInk=#000000, white=#FFFFFF;
 float lineX1, lineY1, lineWidth1, lineHeight1;
 float lineX2, lineY2, lineWidth2, lineHeight2;
@@ -37,7 +37,10 @@ void draw() {
     gridDraw2();
   }
   if (startNow==true && reset==true) {
-    gridDraw2();
+    reset();
+  }
+  if (goodForYou==true) {
+    goodForYou();
   }
 }//End draw
 //
@@ -66,6 +69,8 @@ void mousePressed() {
   if ( splashScreenStart == true && mouseX > quitX && mouseX < quitX+quitWidth && mouseY > quitY && mouseY < quitY+quitHeight ) exit();
   if ( splashScreenStart == true && mouseX > startX2 && mouseX < startX2+startWidth2 && mouseY > startY2 && mouseY < startY2+startHeight2 ) startNow=true;
   if ( startNow == true && mouseX > restartX && mouseX < restartX+restartWidth && mouseY > restartY && mouseY < restartY+restartHeight ) reset=true;
+  if ( startNow == true && mouseX > yesX1 && mouseX < yesX1+yesWidth1 && mouseY > yesY1 && mouseY < yesY1+yesHeight1 ) goodForYou=true;
+  if ( startNow == true && mouseX > noX1 && mouseX < noX1+noWidth1 && mouseY > noY1 && mouseY < noY1+noHeight1 ) girl1C2=true;
 }//End mousePressed
 //
 //End main program

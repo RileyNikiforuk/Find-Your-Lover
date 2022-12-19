@@ -72,6 +72,22 @@ void population() {
   restartY = appHeight * 6.7/20;
   restartWidth = appWidth * 1/20;
   restartHeight = appHeight * 1/20;
+  yesX1 = appWidth * 0/3;
+  yesY1 = appHeight * 0.35/3;
+  yesWidth1 = appWidth * 1/20;
+  yesHeight1 = appHeight * 2/20;
+  noX1 = appWidth * 0.85/3;
+  noY1 = appHeight * 0.35/3;
+  noWidth1 = appWidth * 1/20;
+  noHeight1 = appHeight * 2/20;
+  congratsX = appWidth/4;
+  congratsY = appHeight/8;
+  congratsWidth = appWidth/2;
+  congratsHeight = appHeight/2;
+  yayX = appWidth/4;
+  yayY = appHeight * 6.2/10;
+  yayWidth = appWidth/2;
+  yayHeight = appHeight/12;
   //
 }//End population
 //
