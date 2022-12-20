@@ -12,7 +12,7 @@ int tintRed= 64, tintGreen=64, tintBlue=40, tintNightModeOpacity=85;
   - note: must have one image with aspect ratio
   */
 void homeScreen() {
-  println("Arrived at Home Screen"); //testing for splash screen start button
+  //println("Arrived at Home Screen"); //testing for splash screen start button
   //
 }//End homeScreen
 //
