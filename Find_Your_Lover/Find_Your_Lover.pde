@@ -36,8 +36,9 @@ void draw() {
   if (startNow==true) {
     gridDraw2();
   }
-  if (startNow==true && reset==true) {
+  if ( reset==true ) {
     reset();
+    reset=false;
   }
   if (goodForYou==true) {
     goodForYou();
@@ -70,7 +71,17 @@ void mousePressed() {
   if ( splashScreenStart == true && mouseX > startX2 && mouseX < startX2+startWidth2 && mouseY > startY2 && mouseY < startY2+startHeight2 ) startNow=true;
   if ( startNow == true && mouseX > restartX && mouseX < restartX+restartWidth && mouseY > restartY && mouseY < restartY+restartHeight ) reset=true;
   if ( startNow == true && mouseX > yesX1 && mouseX < yesX1+yesWidth1 && mouseY > yesY1 && mouseY < yesY1+yesHeight1 ) goodForYou=true;
-  if ( startNow == true && mouseX > noX1 && mouseX < noX1+noWidth1 && mouseY > noY1 && mouseY < noY1+noHeight1 ) girl1C2=true;
+  if ( startNow == true && mouseX > yesX2 && mouseX < yesX2+yesWidth2 && mouseY > yesY2 && mouseY < yesY2+yesHeight2 ) goodForYou=true;
+  if ( startNow == true && mouseX > noX1 && mouseX < noX1+noWidth1 && mouseY > noY1 && mouseY < noY1+noHeight1 ) {
+    girl1C2=true;
+  } else {
+    girl1C2=false;
+  }
+  if ( girl1C2 == true && mouseX > noX2 && mouseX < noX2+noWidth2 && mouseY > noY2 && mouseY < noY2+noHeight2 ) {
+    boy2C3=true;
+  } else {
+    boy2C3=false;
+  }
 }//End mousePressed
 //
 //End main program

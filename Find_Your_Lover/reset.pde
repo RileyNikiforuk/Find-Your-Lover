@@ -27,4 +27,5 @@ void reset() {
     fill(255, 0, 0);
     rect(noX1, noY1, noWidth1, noHeight1);
   }
+  reset=false;
 }//End reset

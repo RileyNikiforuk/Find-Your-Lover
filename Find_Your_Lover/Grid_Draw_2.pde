@@ -8,7 +8,8 @@ float columX7, columY7, columWidth7, columHeight7;
 float columX8, columY8, columWidth8, columHeight8;
 float columX9, columY9, columWidth9, columHeight9;
 float yesX1, yesY1, yesWidth1, yesHeight1, noX1, noY1, noWidth1, noHeight1;
-Boolean boy1C1=true, girl1C2=false;
+float yesX2, yesY2, yesWidth2, yesHeight2, noX2, noY2, noWidth2, noHeight2;
+Boolean boy1C1=true, girl1C2=false, boy2C3=false;
 //
 void gridDraw2() {
   background(255);
@@ -41,5 +42,16 @@ void gridDraw2() {
   }
   if (girl1C2==true) {
     image(girl1, columX2, columY2, columWidth2, columHeight2);
+    fill(0, 255, 0);
+    rect(yesX2, yesY2, yesWidth2, yesHeight2);
+    fill(255, 0, 0);
+    rect(noX2, noY2, noWidth2, noHeight2);
+  }
+  if (boy2C3==true) {
+    image(boy2, columX3, columY3, columWidth3, columHeight3);
+    //fill(0, 255, 0);
+    //rect(yesX2, yesY2, yesWidth2, yesHeight2);
+    //fill(255, 0, 0);
+    //rect(noX2, noY2, noWidth2, noHeight2);
   }
 }//End gridDraw2
