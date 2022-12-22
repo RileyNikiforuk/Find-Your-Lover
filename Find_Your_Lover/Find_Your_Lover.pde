@@ -39,6 +39,7 @@ void draw() {
   if ( reset==true ) {
     reset();
     reset=false;
+    girl1C2=false;
   }
   if (goodForYou==true) {
     goodForYou();
