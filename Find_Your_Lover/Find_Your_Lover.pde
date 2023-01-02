@@ -28,8 +28,10 @@ void setup() {
 //
 void draw() {
   //assignment #2: OS level mouse click and splash screen
-  if ( OS_on == true && splashScreenStart == false) splashScreen(); //OS level mouse click
-  if ( splashScreenStart ) {
+  if ( OS_on == true && splashScreenStart == false) {
+    splashScreen(); //OS level mouse click
+  }
+  if ( splashScreenStart==true ) {
     homeScreen();
     gridDraw();
   }
