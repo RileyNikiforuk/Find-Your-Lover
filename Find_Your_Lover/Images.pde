@@ -1,4 +1,4 @@
-PImage backgroundImage, restart, boy1, congrats, girl1, boy2;
+PImage backgroundImage, restart, boy1, congrats, girl1, boy2, girl2, boy3, girl3;
 //
 void imagePopulation() {
   backgroundImage = loadImage ("../Images/maxresdefault.jpg");
@@ -7,6 +7,9 @@ void imagePopulation() {
   congrats = loadImage ("../Images/congratulation.gif");
   girl1 = loadImage ("../Images/girl1.jpg");
   boy2 = loadImage ("../Images/boy2.jpg");
+  girl2 = loadImage ("../Images/girl2.jpg");
+  boy3 = loadImage ("../Images/boy3.jpg");
+  girl3 = loadImage ("../Images/girl3.jpg");
 }//End imagePopulation
 //
 //End imagePopulation subprogram

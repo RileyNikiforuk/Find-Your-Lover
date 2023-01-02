@@ -9,7 +9,11 @@ float columX8, columY8, columWidth8, columHeight8;
 float columX9, columY9, columWidth9, columHeight9;
 float yesX1, yesY1, yesWidth1, yesHeight1, noX1, noY1, noWidth1, noHeight1;
 float yesX2, yesY2, yesWidth2, yesHeight2, noX2, noY2, noWidth2, noHeight2;
-Boolean boy1C1=true, girl1C2=false, boy2C3=false;
+float yesX3, yesY3, yesWidth3, yesHeight3, noX3, noY3, noWidth3, noHeight3;
+float yesX4, yesY4, yesWidth4, yesHeight4, noX4, noY4, noWidth4, noHeight4;
+float yesX5, yesY5, yesWidth5, yesHeight5, noX5, noY5, noWidth5, noHeight5;
+float yesX6, yesY6, yesWidth6, yesHeight6, noX6, noY6, noWidth6, noHeight6;
+Boolean boy1C1=true, girl1C2=false, boy2C3=false, girl2C4=false, boy3C5=false, girl3C6=false, boy4C7=false;
 //
 void gridDraw2() {
   background(255);
@@ -31,8 +35,6 @@ void gridDraw2() {
   rect(columX9, columY9, columWidth9, columHeight9);
   noTint();
   fill(255);
-  rect(restartX, restartY, restartWidth, restartHeight);
-  image(restart, restartX, restartY, restartWidth, restartHeight);
   if (boy1C1==true) {
     image(boy1, columX1, columY1, columWidth1, columHeight1);
     fill(0, 255, 0);
@@ -49,9 +51,32 @@ void gridDraw2() {
   }
   if (boy2C3==true) {
     image(boy2, columX3, columY3, columWidth3, columHeight3);
-    //fill(0, 255, 0);
-    //rect(yesX2, yesY2, yesWidth2, yesHeight2);
-    //fill(255, 0, 0);
-    //rect(noX2, noY2, noWidth2, noHeight2);
+    fill(0, 255, 0);
+    rect(yesX3, yesY3, yesWidth3, yesHeight3);
+    fill(255, 0, 0);
+    rect(noX3, noY3, noWidth3, noHeight3);
+  }
+  if (girl2C4==true) {
+    image(girl2, columX4, columY4, columWidth4, columHeight4);
+    fill(0, 255, 0);
+    rect(yesX4, yesY4, yesWidth4, yesHeight4);
+    fill(255, 0, 0);
+    rect(noX4, noY4, noWidth4, noHeight4);
+  }
+  if (boy3C5==true) {
+    image(boy3, columX5, columY5, columWidth5, columHeight5);
+    fill(0, 255, 0);
+    rect(yesX5, yesY5, yesWidth5, yesHeight5);
+    fill(255, 0, 0);
+    rect(noX5, noY5, noWidth5, noHeight5);
+  }
+  rect(restartX, restartY, restartWidth, restartHeight);
+  image(restart, restartX, restartY, restartWidth, restartHeight);
+  if (girl3C6==true) {
+    image(girl3, columX6, columY6, columWidth6, columHeight6);
+    fill(0, 255, 0);
+    rect(yesX6, yesY6, yesWidth6, yesHeight6);
+    fill(255, 0, 0);
+    rect(noX6, noY6, noWidth6, noHeight6);
   }
 }//End gridDraw2
