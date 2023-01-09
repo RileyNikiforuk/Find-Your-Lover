@@ -128,6 +128,14 @@ void population() {
   noY6 = appHeight * 1.35/3;
   noWidth6 = appWidth * 1/20;
   noHeight6= appHeight * 2/20;
+  yesX7 = appWidth * 0/3;
+  yesY7 = appHeight * 2.35/3;
+  yesWidth7 = appWidth * 1/20;
+  yesHeight7 = appHeight * 2/20;
+  noX7 = appWidth * 0.85/3;
+  noY7 = appHeight * 2.35/3;
+  noWidth7 = appWidth * 1/20;
+  noHeight7 = appHeight * 2/20;
   //
 }//End population
 //
