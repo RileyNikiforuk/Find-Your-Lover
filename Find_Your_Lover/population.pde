@@ -136,6 +136,22 @@ void population() {
   noY7 = appHeight * 2.35/3;
   noWidth7 = appWidth * 1/20;
   noHeight7 = appHeight * 2/20;
+  yesX8 = appWidth * 1/3;
+  yesY8 = appHeight * 2.35/3;
+  yesWidth8 = appWidth * 1/20;
+  yesHeight8 = appHeight * 2/20;
+  noX8 = appWidth * 1.85/3;
+  noY8 = appHeight * 2.35/3;
+  noWidth8 = appWidth * 1/20;
+  noHeight8 = appHeight * 2/20;
+  yesX9 = appWidth * 2/3;
+  yesY9 = appHeight * 2.35/3;
+  yesWidth9 = appWidth * 1/20;
+  yesHeight9 = appHeight * 2/20;
+  noX9 = appWidth * 2.85/3;
+  noY9 = appHeight * 2.35/3;
+  noWidth9 = appWidth * 1/20;
+  noHeight9 = appHeight * 2/20;
   //
 }//End population
 //

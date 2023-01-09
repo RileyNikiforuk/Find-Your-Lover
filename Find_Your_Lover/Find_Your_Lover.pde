@@ -1,6 +1,6 @@
 //Global Variables
 int appWidth, appHeight, smallerDimension, largerDimension;
-Boolean OS_on=false, splashScreenStart=false, nightMode=false, startNow=false, reset=false, goodForYou=false;
+Boolean OS_on=false, splashScreenStart=false, nightMode=false, startNow=false, reset=false, goodForYou=false, haha=false;
 color purple=#FF00FF, resetDefaultInk=#000000, white=#FFFFFF;
 float lineX1, lineY1, lineWidth1, lineHeight1;
 float lineX2, lineY2, lineWidth2, lineHeight2;
@@ -47,9 +47,14 @@ void draw() {
     boy3C5=false;
     girl3C6=false;
     boy4C7=false;
+    girl4C8=false;
+    boy5C9=false;
   }
   if (goodForYou==true) {
     goodForYou();
+  }
+  if (haha==true) {
+    haha();
   }
 }//End draw
 //
@@ -85,13 +90,17 @@ void mousePressed() {
   if ( boy3C5 == true && mouseX > yesX5 && mouseX < yesX5+yesWidth5 && mouseY > yesY5 && mouseY < yesY5+yesHeight5 ) goodForYou=true;
   if ( girl3C6 == true && mouseX > yesX6 && mouseX < yesX6+yesWidth6 && mouseY > yesY6 && mouseY < yesY6+yesHeight6 ) goodForYou=true;
   if ( boy4C7 == true && mouseX > yesX7 && mouseX < yesX7+yesWidth7 && mouseY > yesY7 && mouseY < yesY7+yesHeight7 ) goodForYou=true;
+  if ( girl4C8 == true && mouseX > yesX8 && mouseX < yesX8+yesWidth8 && mouseY > yesY8 && mouseY < yesY8+yesHeight8 ) goodForYou=true;
+  if ( boy5C9 == true && mouseX > yesX9 && mouseX < yesX9+yesWidth9 && mouseY > yesY9 && mouseY < yesY9+yesHeight9 ) goodForYou=true;
   if ( boy1C1 == true && mouseX > noX1 && mouseX < noX1+noWidth1 && mouseY > noY1 && mouseY < noY1+noHeight1 ) girl1C2=true;
   if ( girl1C2 == true && mouseX > noX2 && mouseX < noX2+noWidth2 && mouseY > noY2 && mouseY < noY2+noHeight2 ) boy2C3=true;
   if ( boy2C3 == true && mouseX > noX3 && mouseX < noX3+noWidth3 && mouseY > noY3 && mouseY < noY3+noHeight3 ) girl2C4=true;
   if ( girl2C4 == true && mouseX > noX4 && mouseX < noX4+noWidth4 && mouseY > noY4 && mouseY < noY4+noHeight4 ) boy3C5=true;
   if ( boy3C5 == true && mouseX > noX5 && mouseX < noX5+noWidth5 && mouseY > noY5 && mouseY < noY5+noHeight5 ) girl3C6=true;
   if ( girl3C6 == true && mouseX > noX6 && mouseX < noX6+noWidth6 && mouseY > noY6 && mouseY < noY6+noHeight6 ) boy4C7=true;
-  if ( boy4C7 == true && mouseX > noX6 && mouseX < noX6+noWidth6 && mouseY > noY6 && mouseY < noY6+noHeight6 ) girl4C8=true;
+  if ( boy4C7 == true && mouseX > noX7 && mouseX < noX7+noWidth7 && mouseY > noY7 && mouseY < noY7+noHeight7 ) girl4C8=true;
+  if ( girl4C8 == true && mouseX > noX8 && mouseX < noX8+noWidth8 && mouseY > noY8 && mouseY < noY8+noHeight8 ) boy5C9=true;
+  if ( boy5C9 == true && mouseX > noX9 && mouseX < noX9+noWidth9 && mouseY > noY9 && mouseY < noY9+noHeight9 ) haha=true;
 }//End mousePressed
 //
 //End main program
