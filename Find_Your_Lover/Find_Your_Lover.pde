@@ -92,7 +92,7 @@ void mousePressed() {
   if ( boy4C7 == true && mouseX > yesX7 && mouseX < yesX7+yesWidth7 && mouseY > yesY7 && mouseY < yesY7+yesHeight7 ) goodForYou=true;
   if ( girl4C8 == true && mouseX > yesX8 && mouseX < yesX8+yesWidth8 && mouseY > yesY8 && mouseY < yesY8+yesHeight8 ) goodForYou=true;
   if ( boy5C9 == true && mouseX > yesX9 && mouseX < yesX9+yesWidth9 && mouseY > yesY9 && mouseY < yesY9+yesHeight9 ) goodForYou=true;
-  if ( boy1C1 == true && mouseX > noX1 && mouseX < noX1+noWidth1 && mouseY > noY1 && mouseY < noY1+noHeight1 ) girl1C2=true;
+  if ( startNow == true && boy1C1 == true && mouseX > noX1 && mouseX < noX1+noWidth1 && mouseY > noY1 && mouseY < noY1+noHeight1 ) girl1C2=true;
   if ( girl1C2 == true && mouseX > noX2 && mouseX < noX2+noWidth2 && mouseY > noY2 && mouseY < noY2+noHeight2 ) boy2C3=true;
   if ( boy2C3 == true && mouseX > noX3 && mouseX < noX3+noWidth3 && mouseY > noY3 && mouseY < noY3+noHeight3 ) girl2C4=true;
   if ( girl2C4 == true && mouseX > noX4 && mouseX < noX4+noWidth4 && mouseY > noY4 && mouseY < noY4+noHeight4 ) boy3C5=true;
